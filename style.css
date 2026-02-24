@@ -64,9 +64,19 @@ body {
 }
 
 @keyframes float {
-    0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
-    33% { transform: translate(50px, -50px) scale(1.1) rotate(10deg); }
-    66% { transform: translate(-30px, 30px) scale(0.9) rotate(-10deg); }
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1) rotate(0deg);
+    }
+
+    33% {
+        transform: translate(50px, -50px) scale(1.1) rotate(10deg);
+    }
+
+    66% {
+        transform: translate(-30px, 30px) scale(0.9) rotate(-10deg);
+    }
 }
 
 .container {
@@ -156,6 +166,7 @@ header {
         opacity: 0;
         transform: translateY(40px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -177,6 +188,7 @@ header {
     margin-bottom: 0.5rem;
     background: linear-gradient(to right, #ffffff, #888888);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 1.1;
 }
@@ -331,7 +343,7 @@ section {
 }
 
 .project-thumb {
-    height: 220px;
+    height: 20px;
     background: linear-gradient(135deg, #121212, #2a2a2a);
     position: relative;
     overflow: hidden;
@@ -496,16 +508,16 @@ footer {
     .nav-links {
         display: none;
     }
-    
+
     header {
         height: auto;
         padding-top: 8rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     section {
         padding: 5rem 0;
     }

@@ -1,13 +1,10 @@
 // Portfolio Data
 const skills = [
     { name: 'React', level: 90, icon: '⚛️' },
-    { name: 'Next.js', level: 85, icon: '▲' },
-    { name: 'TypeScript', level: 88, icon: '🔵' },
     { name: 'Node.js', level: 85, icon: '🟢' },
     { name: 'Python', level: 88, icon: '🐍' },
     { name: 'Tailwind', level: 90, icon: '🌊' },
     { name: 'Firebase', level: 82, icon: '🔥' },
-    { name: 'PostgreSQL', level: 80, icon: '🐘' },
     { name: 'MongoDB', level: 80, icon: '🍃' },
     { name: 'JavaScript', level: 92, icon: '⚡' },
 ];
@@ -27,42 +24,36 @@ const projects = [
         title: 'PrepWise : AI-powered Interview Prep Platform',
         description: 'A comprehensive interview preparation platform that uses AI to analyze resumes, provide mock interviews, and offer personalized feedback.',
         tech: [
-            'Frontend: Next.js, React, Tailwind, Framer Motion',
+            'Frontend: Next.js, React, Tailwind',
             'Backend: Next.js, Firebase',
-            'AI: Gemini, Vercel AI SDK',
-            'Parse: pdf-parse, Tesseract.js'
+            'AI: Gemini',
+            'Parse: pdf-parse'
         ]
     }
 ];
 
 const certificates = [
     {
-        title: 'AWS Certified Developer',
-        issuer: 'Amazon Web Services',
+        title: 'MERN Stack Developer',
+        issuer: 'Apna College',
         icon: '🏆'
     },
     {
-        title: 'Google Cloud Professional',
-        issuer: 'Google Cloud',
+        title: 'Data science for Engineers',
+        issuer: 'NPTEL',
         icon: '🎯'
     },
     {
-        title: 'Meta Frontend Developer',
-        issuer: 'Meta',
+        title: 'JavaScript',
+        issuer: 'Scaler',
         icon: '⭐'
-    },
-    {
-        title: 'Microsoft Azure Expert',
-        issuer: 'Microsoft',
-        icon: '💫'
     }
 ];
 
 const contacts = [
-    { platform: 'Email', value: 'hello@example.com', icon: '📧', link: 'mailto:hello@example.com' },
-    { platform: 'LinkedIn', value: 'in/devprofile', icon: '🔗', link: '#' },
-    { platform: 'GitHub', value: 'github.com/devuser', icon: '🐙', link: '#' },
-    { platform: 'Twitter', value: '@devtweet', icon: '🐦', link: '#' }
+    { platform: 'Email', value: 'harshithababu006@gmail.com', icon: '📧', link: 'mailto:harshithababu006@gamil.com' },
+    { platform: 'LinkedIn', value: 'harshitha2006', icon: '🔗', link: 'https://www.linkedin.com/in/harshitha2006/' },
+    { platform: 'GitHub', value: 'Harshitha006', icon: '🐙', link: 'https://github.com/Harshitha006/' }
 ];
 
 // Populate Skills
