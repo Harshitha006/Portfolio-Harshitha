@@ -151,14 +151,61 @@ nav {
 
 /* Header Section */
 header {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
+    padding-top: 120px;
 }
 
 .header-content {
     animation: fadeInUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+    width: 100%;
+}
+
+.header-layout {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+}
+
+.header-text {
+    flex: 1;
+}
+
+.header-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-placeholder {
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    background: var(--card-bg);
+    border: 2px dashed var(--card-hover-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    backdrop-filter: blur(var(--glass-blur));
+    transition: var(--transition-fast);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.photo-placeholder:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--accent-color);
+}
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @keyframes fadeInUp {
@@ -245,6 +292,19 @@ header {
 
 .btn.secondary:hover {
     color: var(--text-primary);
+}
+
+.btn.tertiary {
+    background: transparent;
+    border: 1px solid var(--text-secondary);
+    color: var(--text-secondary);
+}
+
+.btn.tertiary:hover {
+    background: rgba(160, 160, 160, 0.1);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
 }
 
 /* Section Common */
@@ -512,6 +572,31 @@ footer {
     header {
         height: auto;
         padding-top: 8rem;
+    }
+
+    .header-layout {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .header-photo {
+        width: 100%;
+        order: -1;
+    }
+
+    .photo-placeholder {
+        width: 200px;
+        height: 200px;
+        font-size: 3rem;
+    }
+
+    .hero-cta {
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.8rem;
     }
 
     .section-title {

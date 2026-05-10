@@ -1,33 +1,49 @@
 // Portfolio Data
 const skills = [
-    { name: 'React', level: 90, icon: '⚛️' },
-    { name: 'Node.js', level: 85, icon: '🟢' },
-    { name: 'Python', level: 88, icon: '🐍' },
-    { name: 'Tailwind', level: 90, icon: '🌊' },
-    { name: 'Firebase', level: 82, icon: '🔥' },
-    { name: 'MongoDB', level: 80, icon: '🍃' },
+    { name: 'Java', level: 88, icon: '☕' },
+    { name: 'SQL', level: 86, icon: '🗄️' },
+    { name: 'Python', level: 90, icon: '🐍' },
+    { name: 'C', level: 80, icon: '🔧' },
+    { name: 'HTML', level: 92, icon: '🌐' },
+    { name: 'CSS', level: 90, icon: '🎨' },
     { name: 'JavaScript', level: 92, icon: '⚡' },
+    { name: 'ReactJS', level: 89, icon: '⚛️' },
+    { name: 'Pandas', level: 85, icon: '📊' },
+    { name: 'NumPy', level: 85, icon: '🔢' },
+    { name: 'Scikit-Learn', level: 84, icon: '🤖' },
+    { name: 'Matplotlib', level: 82, icon: '📈' },
+    { name: 'Seaborn', level: 82, icon: '📉' },
+    { name: 'Vercel', level: 80, icon: '🚀' },
+    { name: 'Firebase', level: 83, icon: '🔥' },
+    { name: 'MongoDB', level: 80, icon: '🍃' },
+    { name: 'Data Analysis', level: 88, icon: '🧠' },
+    { name: 'Machine Learning', level: 86, icon: '🤖' },
+    { name: 'Deep Learning', level: 84, icon: '🧠' },
+    { name: 'Frontend Development', level: 90, icon: '💻' },
 ];
 
 const projects = [
     {
-        title: 'HackNect : An AI-powered Hackathon Matchmaker',
-        description: 'HackNect connects participants with the right teams and projects based on their skills and interests using advanced machine learning algorithms.',
+        title: 'PrepWise – An AI Powered Interview Coach',
+        description: 'Developed an end-to-end interview preparation platform featuring intelligent resume ATS scoring, interactive voice-based mock interviews with real-time feedback, and detailed performance analytics.',
         tech: [
-            'Frontend: Next.js, React, TypeScript, Tailwind',
-            'Backend: Node.js, Express, TypeScript',
-            'AI/ML: Python, FastAPI, Scikit-learn',
-            'DB: PostgreSQL, MongoDB'
+            'Tools Used: Next.js 16, React 19, TypeScript, Tailwind CSS, Firebase (Auth/Firestore)',
+            'Google Gemini 1.5 Flash, Vercel AI SDK, Web Speech API'
         ]
     },
     {
-        title: 'PrepWise : AI-powered Interview Prep Platform',
-        description: 'A comprehensive interview preparation platform that uses AI to analyze resumes, provide mock interviews, and offer personalized feedback.',
+        title: 'ScholarForge – An AI-Powered Collaborative Research Workspace',
+        description: 'Built a full-stack research platform enabling AI-assisted academic paper drafting using a local RAG pipeline that performs semantic search over uploaded PDFs to generate cited, hallucination-free content.',
         tech: [
-            'Frontend: Next.js, React, Tailwind',
-            'Backend: Next.js, Firebase',
-            'AI: Gemini',
-            'Parse: pdf-parse'
+            'Tools Used: Next.js 16, React 19, TypeScript, Tailwind CSS, Prisma (PostgreSQL), Clerk Auth',
+            'LangChain, Ollama (Llama 3.2), Liveblocks, Tiptap, Yjs, LaTeX'
+        ]
+    },
+    {
+        title: 'AI FormCoach – Real-Time Exercise Form Analyzer',
+        description: 'Built a computer vision fitness application using OpenCV and MediaPipe to track 33 body landmarks in real-time, calculate joint angles, and provide instant posture correction feedback with automated rep counting across multiple exercises.',
+        tech: [
+            'Tools Used: Python, OpenCV, MediaPipe, NumPy, PyTest'
         ]
     }
 ];
